@@ -61,8 +61,5 @@ Validate the final model's performance using a separate validation dataset or te
 ## Conclusion
 Summarize the findings, insights, and performance of the fraud detection model. Discuss potential use cases and future improvements.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
 
-Feel free to reach out if you have any questions or suggestions!
 

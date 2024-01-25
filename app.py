@@ -14,7 +14,7 @@ app = Flask(__name__)
 def churn_predict():
     test_json = request.get_json()
    
-    if test_json: # there is data
+    if test_json: 
         if isinstance(test_json, dict): # unique example
             test_raw = pd.DataFrame(test_json, index=[0])
             
@@ -35,11 +35,11 @@ def churn_predict():
         
         # prediction
         df_response = pipeline.get_prediction(model, test_raw, df3)
-#         data = json.loads(df_response)
+#       data = json.loads(df_response)
 
-# # Extract the "prediction" column
-#         predictions = [entry["prediction"] for entry in data]
-#         return predictions
+#       Extract the "prediction" column
+#       predictions = [entry["prediction"] for entry in data]
+#       return predictions
         return df_response
         
         
